@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Survey Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+			  background-color: #000077;
+			  color: rgb(240,240,240);
+			  font-family: Arial, sans-serif;
+			}
+
+			form {
+			  background-color: #000044;
+			  color: rgb(240,240,240);
+			  display: block;
+			  margin: auto;
+			  max-width: 50%;
+			  border-radius: 10px;
+			  padding: 15px;
+			}
+
+			h1, p {
+			  text-align: center;
+			}
+
+			#submit {
+			  background-color: green;
+			  width: 100%;
+			  height: 2em;
+			  font-size: 1.3em;
+			  color: rgb(240,240,240);
+			  border-radius: 4px;
+			  margin-bottom: 10px;
+			  border: none;
+			}
+
+			textarea {
+			  width: 99%;
+			  margin-top: 20px;
+			  margin-bottom: 40px;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="number"],
+			select {
+			  width: 100%;
+			  padding: 12px;
+			  margin-bottom: 20px;
+			  margin-top: 20px;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+
+			label, legend, textarea, p {
+			  font-size: 20px;
+			}
+
+			input, option {
+			  font-size: 16px;
+			}
+
+			fieldset {
+			  margin-bottom: 20px;
+			  margin-top: 20px;
+			}
+
+			div {
+			  margin: 20px;
+			}
+
+			.block {
+			  display: block;
+			  padding: 5px;
+			}
+
+			header {
+			  margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">freeCodeCamp Survey Form</h1>
+			<p id="description">
+				<i>Thank you for taking the time to help us improve the platform</i>
+			</p>
+		</header>
+		<form id="survey-form">
+			<div>
+				<label id="name-label" for="name">Name
+					<input id="name" type="text" placeholder="Enter your name" required>
+				</label>
+				<label id="email-label" for="email">Email
+					<input id="email" type="email" placeholder="Enter your email" required>
+				</label>
+				<label id="number-label" for="number">Age (optional)
+					<input id="number" type="number" min="0" max="120" placeholder="Enter your age">
+				</label>
+				<label for="dropdown">Which option best describes your current role?</label>
+				<select id="dropdown">
+					<option disabled selected>Select current role</option>
+					<option value="student">Student</option>
+					<option value="student">Full Time Job</option>
+					<option value="student">Full Time Learner</option>
+					<option value="student">Prefer not to say</option>
+					<option value="student">Other</option>
+				</select>
+				<fieldset>
+				<legend>Would you recommend freeCodeCamp to a friend?</legend>
+					<label for="definitely" class="block">
+						<input id="definitely" type="radio" name="recommend" value="definitely"> Definitely
+					</label>
+					<label for="maybe" class="block">
+						<input id="maybe" type="radio" name="recommend" value="maybe"> Maybe
+					</label>
+					<label for="notsure" class="block">
+						<input id="notsure" type="radio" name="recommend" value="maybe"> Not sure
+					</label>
+				</fieldset>
+				<label for="dropdown2">What is your favorite feature of freeCodeCamp?</label>
+				<select id="dropdown2">
+					<option disabled selected>Select an option</option>
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="opensource">Open Source</option>
+				</select>
+				<fieldset>
+					<legend>What would you like to see improved? (Check all that apply)</legend>
+					<label for="frontend" class="block">
+						<input id="frontend" type="checkbox" name="improvements" value="frontend"> Front-end Projects
+					</label>
+					<label for="backend" class="block">
+						<input id="backend" type="checkbox" name="improvements" value="backend"> Back-end Projects
+					</label>
+					<label for="data" class="block">
+						<input id="data" type="checkbox" name="improvements" value="data"> Data Visualization
+					</label>
+					<label for="challenges" class="block">
+						<input id="challenges" type="checkbox" name="improvements" value="challenges"> Challenges
+					</label>
+					<label for="opensource" class="block">
+						<input id="opensource" type="checkbox" name="improvements" value="opensource"> Open Source Community
+					</label>
+					<label for="gitter" class="block">
+						<input id="gitter" type="checkbox" name="improvements" value="gitter"> Gitter help rooms
+					</label>
+					<label for="videos" class="block">
+						<input id="videos" type="checkbox" name="improvements" value="videos"> Videos
+					</label>
+					<label for="meetups" class="block">
+						<input id="meetups" type="checkbox" name="improvements" value="meetups"> City Meetups
+					</label>
+					<label for="wiki" class="block">
+						<input id="wiki" type="checkbox" name="improvements" value="wiki"> Wiki
+					</label>
+					<label for="forum" class="block">
+						<input id="forum" type="checkbox" name="improvements" value="forum"> Forum
+					</label> 
+					<label for="courses" class="block">
+						<input id="courses" type="checkbox" name="improvements" value="courses"> Additional Courses
+					</label> 
+				</fieldset>
+				<textarea rows="10" placeholder="Enter your comment here..."></textarea>
+				<button id="submit">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
