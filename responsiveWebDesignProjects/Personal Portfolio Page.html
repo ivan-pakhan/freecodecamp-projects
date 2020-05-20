@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Portfolio Webpage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+			  margin: 0;
+			  background: linear-gradient(35deg, #333333, #222222);
+			  color: #FFFFFF;
+			  font-family: Arial, sans-serif;
+			}
+
+			#welcome-section {
+			  height: 100vh;
+			}
+
+			#welcome-section h1 {
+			  color: #DDDDDD;
+			  text-align: center;
+			  font-size: 48px;
+			  padding-top: 150px;
+			}
+
+			#welcome-section p {
+			  color: #EA1E5A;
+			  text-align: center;
+			  font-style: italic;
+			  font-size: 32px;
+			}
+
+			#navbar {
+			  background-color: #C83F49;
+			  text-align: right;
+			  padding: 20px 0;
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			}
+
+			#navbar a {
+			  text-decoration: none;
+			  font-size: 22px;
+			  color: #FFFFFF;
+			  padding: 30px;
+			}
+
+			#projects {
+			  background-color: #45567D;
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			}
+
+			#projects header {
+			  width: 100%;
+			  text-align: center;
+			  padding-top: 20px;
+			  font-size: 32px;
+			}
+
+			.project-tile {
+			  background-color: #444444;
+			  display: flex;
+			  flex-direction: column;
+			  /* flex-grow, flex-shrink, flex-basis */
+			  flex-grow: 0;
+			  flex-shrink:0;
+			  width: 300px;
+			  height: 300px;
+			  justify-content: center;
+			  margin: 30px;
+			  text-decoration: none;
+			}
+
+			.project-tile img {
+			  border-style: none;
+			}
+
+			.project-tile p {
+			  color: #FFFFFF;
+			  max-width: 100%;
+			  text-align: center;
+			  font-size: 18px;
+			}
+
+			#contacts {
+			  display: flex;
+			  justify-content: center;
+			}
+
+			.contact {
+			  display: flex;
+			  align-items: center;
+			  margin: 30px;
+			  text-decoration: none;
+			  color: #FFFFFF;
+			}
+
+			a.contact:hover { 
+			  animation-name: shift;
+			  animation-duration: 0.5s;
+			  animation-fill-mode: forwards;
+			}
+
+			@keyframes shift {
+			  100% {
+				transform: translateY(10px);
+			  }
+			}
+
+			.contact div {
+			  padding-left: 10px;
+			}
+
+			footer {
+			  border-top: 4px solid #C83F49;
+			  text-align: right;
+			  padding: 10px 40px;
+			  font-size: 18px;
+			}
+		</style>		
+	</head>
+	
+	<body>
+	
+		<div id="welcome-section">
+			<h1>Hey I am Ivan</h1>
+			<p>a web developer</p>
+		</div>
+		
+		<nav id="navbar">
+			<a href="#welcome-section">About</a>
+			<a href="#projects">Work</a>
+			<a href="#contacts">Contact</a>
+		</nav>
+		
+		<div id="projects">
+			<header>These are some of my projects</header>
+			<a class="project-tile" href="https://codepen.io/ivan8383/pen/LYpQRZX" target="_blank">
+				<img src="https://drive.google.com/uc?id=1c-HgvFTEN7Ci6KvZLS8pfhiSWB4qqoez" alt="Tribute Page">
+				<p>Tribute Page</p>
+			</a>
+			<a class="project-tile" href="https://codepen.io/ivan8383/pen/qBOxGGN" target="_blank">
+				<img src="https://drive.google.com/uc?id=1K6RVsLf50ApPyQxUEHxRvDCILWtMoSYF" alt="Survey Form">
+				<p>Survey Form</p>
+			</a>
+			<a class="project-tile" href="https://codepen.io/ivan8383/pen/xxwWPOV" target="_blank">				
+				<img src="https://drive.google.com/uc?id=1CKbtkR2kekwZRnEFu0zP2lvKIPzklOl0" alt="Product Landing Page">
+				<p>Product Landing Page</p>
+			</a>
+			<a class="project-tile" href="https://codepen.io/ivan8383/pen/dyYKPEg" target="_blank">
+				<img src="https://drive.google.com/uc?id=1rbUayBMWoBgkqpoV_BB478IMzxQSzCoY" alt="Technical Documentation Page">
+				<p>Technical Documentation Page</p></a>
+		</div>
+		
+		<div id="contacts">
+			<a id="profile-link" class="contact" href="https://github.com/" target="_blank">
+				<img src="https://drive.google.com/uc?id=1_BSqhljfrGvBOVrfUIVk3kZiAhUnhvjw" alt="GitHub contact">
+				<div>GitHub</div>
+			</a>
+			<a class="contact" href="https://twitter.com/" target="_blank">
+				<img src="https://drive.google.com/uc?id=1z-DGgIy8mnVBAgG3Zw2N4Esrup4puate" alt="Twitter contact">
+				<div>Twitter</div>
+			</a>
+			<a class="contact" href="https://www.facebook.com/" target="_blank">
+				<img src="https://drive.google.com/uc?id=18hq4cOjK5ilN1pQ8GTtgnixGmSq0R1w8" alt="Facebook contact">
+				<div>Facebook</div>
+			</a>
+			<a class="contact" href="http://gmail.com/" target="_blank">
+				<img src="https://drive.google.com/uc?id=125DHrDG_kNou1hU5WjW_PEAKCkGk-ruO" alt="Email contact">
+				<div>Email</div>
+			</a>
+		</div>
+		
+		<footer>
+			<p>&copy; Project for freeCodeCamp, created by Ivan</p>
+		</footer>
+
+	</body>
+	
+</html>
